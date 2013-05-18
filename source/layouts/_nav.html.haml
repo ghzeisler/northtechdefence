@@ -1,0 +1,40 @@
+.navbar.navbar-inverse
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        /nav icon for menu on small displays
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / %a.brand{:href => "/"} Zive.me
+      .nav-collapse
+        %ul.nav
+          - home = '/'
+          - about = '/about'
+          - lowers = '/products/AR15BilletLowerReceiver'
+          - uppers = '/AR15 Billet Uppers'
+          - dealers = "/dealers"
+          - facebook = 'https://www.facebook.com/NorthTechDefense'
+          //Desktop
+          = nav_active(page_classes,home, "Home","visible-desktop")
+          = nav_active(page_classes,about, "About","visible-desktop")
+          = nav_active(page_classes,lowers, "AR15 Billet Lowers","visible-desktop")
+          = nav_active(page_classes,uppers, "AR15 Billet Uppers","visible-desktop")
+          = nav_active(page_classes,dealers, "Northtech Dealers","visible-desktop")
+
+          //Tablet
+          = nav_active(page_classes,home, "Home","visible-tablet")
+          = nav_active(page_classes,about, "About","visible-tablet")
+          = nav_active(page_classes,lowers, "AR15 Lowers","visible-tablet")
+          = nav_active(page_classes,uppers, "AR15 Uppers","visible-tablet")
+          = nav_active(page_classes,dealers, "Dealers","visible-tablet")
+          = nav_active(page_classes,facebook, "Facebook","visible-tablet")
+          //Phone
+          = nav_active(page_classes,home, "Home","visible-phone")
+          = nav_active(page_classes,about, "About","visible-phone")
+          = nav_active(page_classes,lowers, "AR15 Billet Lowers","visible-phone")
+          = nav_active(page_classes,uppers, "AR15 Billet Uppers","visible-phone")
+          = nav_active(page_classes,dealers, "Northtech Dealers","visible-phone")
+          = nav_active(page_classes,facebook, "Facebook","visible-phone")
+        %a{href: facebook}
+          %img.icon.visible-desktop{src: "/img/facebook.png"}

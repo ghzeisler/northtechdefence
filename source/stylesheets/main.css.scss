@@ -1,0 +1,173 @@
+@import "magnific-Popup";
+@import "royalslider";
+// @import "skins/default/rs-default";
+@import "skins/minimal-white/rs-minimal-white";
+
+$navbarCollapseWidth: 780px;
+$box-shadow-color: rgb(70, 71, 75);
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body{
+    margin: 0 auto;
+background: #202329;
+background: url(/img/carbon_fibre_big.png);
+}
+.hero-unit{
+    @include box-shadow(0px 0px 10px 3px $box-shadow-color);
+    // @include opacity(30);
+    @include gradientBar(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2), $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25));
+    padding: 10px;
+    margin:20px 0 20px 0;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-inner{
+    @include border-radius(8px 8px 0 0);
+    @include box-shadow(0px 3px 10px 3px $box-shadow-color);
+    .nav li a{
+            text-transform: uppercase;
+            font-family: sans-serif;
+            line-height: 20px;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            filter: Shadow(Color=black, Direction=130, Strength=2);
+
+            &:hover{
+                text-shadow: #929395 0.1em 0.1em 2em;
+                filter: Shadow(Color=#929395, Direction=130, Strength=5);
+                color:#cacacd;
+            }
+    }
+    .icon{
+        float:right;
+        margin:5px;
+    }
+}
+.container.content{
+    @include box-shadow(0px 10px 10px 3px $box-shadow-color);
+    background: #202329;
+    background: url(/img/cartographer.png);
+    color:white;
+    font-size:1.2em;
+    line-height: 1.5em;
+    p{
+        padding: 10px;
+    }
+    article, section{
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    h1, h2, h3, h4{
+        padding-left:20px;
+    }
+}
+.products{
+    section img{
+        border:5px solid white;
+        margin: 1px;
+        @include border-radius(4px);
+        &:hover{
+            border:5px solid rgb(141, 141, 141);
+        }
+
+    }
+    .lightbox_products{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+}
+.index{
+    .hero-unit{
+        display:none;
+    }
+    .navbar{
+        margin-top:10px;
+    }
+}
+footer{
+    @include border-radius(0 0 8px 8px);
+    @include box-shadow(0px 5px 10px 3px $box-shadow-color);
+    height: 100px;
+    background: url(/img/footer_grade.png);
+    margin-bottom: 20px;
+}
+
+// Dealers page
+.content .dealers {
+    font-size: 1.1em;
+    a{color:rgb(143, 51, 51);}
+    }
+ul {
+    list-style:none;
+    .state{
+        border-bottom: white 1px solid;
+        padding: 25px 0 0 0;
+        width: 80%;
+    }
+    .city{
+    }
+    h4{
+        margin: 20px 0 0 0;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    p{
+        padding:0;
+        margin: 0;
+    }
+}
+.model, .price{
+    padding-left:40px;
+}
+.infoBlock{
+    @include border-radius(8px 8px 8px 8px);
+    @include box-shadow(0px 5px 5px 3px $box-shadow-color);
+    ul li{
+        list-style-type: circle;
+
+    }
+}
+footer{
+    color: white;
+    img{
+        float:left;
+        margin:5px;
+    }
+    p{
+        margin: 5px;
+    }
+    .right{
+        float:right;
+        text-align: right;
+    }
+    .left{
+        float:left;
+    }
+}
+@media (min-width: 979px) and (max-width: 1200px){
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 900px;
+    }
+}
+@media (min-width: 767px) and (max-width: 979px){
+     .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 750px;
+    }
+}
+@media (min-width: $navbarCollapseWidth) and (max-width: 767px){
+
+}
+@media (max-width: $navbarCollapseWidth){
+    .lightbox_products{
+            margin-left: 70px;
+    }
+}
+
