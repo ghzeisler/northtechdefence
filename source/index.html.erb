@@ -1,158 +1,111 @@
 ---
 title: Northtech Defence
 ---
+ <%= stylesheet_link_tag 'slider.custom' %>
 <style>
-    #full-width-slider {
-  width: 100%;
-  color: #000;
+.bContainer{
+  color:white;
 }
-.coloredBlock {
-  padding: 12px;
-  background: rgba(255,0,0,0.6);
-  color: #FFF;
-   width: 200px;
-   left: 20%;
-   top: 5%;
-}
-.infoBlock {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  left: auto;
-  max-width: 25%;
-  padding-bottom: 0;
-  background: #FFF;
-  background: rgba(255, 255, 255, 0.8);
-  overflow: hidden;
-  padding: 20px;
-}
-.infoBlockLeftBlack {
-  color: #FFF;
-  background: #000;
-  background: rgba(0,0,0,0.75);
-  left: 30px;
-  right: auto;
-}
-.infoBlock h4 {
-  font-size: 20px;
-  line-height: 1.2;
-  margin: 0;
-  padding-bottom: 3px;
-}
-.infoBlock p {
-  font-size: 14px;
-  margin: 4px 0 0;
-}
-.infoBlock a {
-  color: #FFF;
-  text-decoration: underline;
-}
-.photosBy {
-  position: absolute;
-  line-height: 24px;
-  font-size: 12px;
-  background: #FFF;
-  color: #000;
-  padding: 0px 10px;
-  position: absolute;
-  left: 12px;
-  bottom: 12px;
-  top: auto;
-  border-radius: 2px;
-  z-index: 25;
-}
-.photosBy a {
-  color: #000;
-}
-.fullWidth {
-  max-width: 1400px;
-  margin: 0 auto 24px;
-}
-
-@media screen and (min-width:960px) and (min-height:660px) {
-  .heroSlider .rsOverflow,
-  .royalSlider.heroSlider {
-      height: 520px !important;
+  .slide1{
+    background-image: url("/img/banner/slide1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
   }
-}
-
-@media screen and (min-width:960px) and (min-height:1000px) {
-    .heroSlider .rsOverflow,
-    .royalSlider.heroSlider {
-        height: 700px !important;
-    }
-}
-@media screen and (min-width: 0px) and (max-width: 800px) {
-  .royalSlider.heroSlider,
-  .royalSlider.heroSlider .rsOverflow {
-    height: 300px !important;
+  .slide2{
+    background-image: url("/img/banner/slide2.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
   }
-  .infoBlock {
-    padding: 10px;
-    height: auto;
-    max-height: 100%;
-    min-width: 40%;
-    left: 5px;
-    top: 5px;
-    right: auto;
-    font-size: 12px;
+  .slide3{
+    background-image: url("/img/banner/slide3.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
   }
-  .infoBlock h3 {
-     font-size: 14px;
-     line-height: 17px;
+  .slide4{
+    background-image: url("/img/banner/slide4.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;;
   }
-}
 </style>
+<div id="slider-with-blocks-1" class="royalSlider rsMinW  ">
 
-<div id="full-width-slider" class="royalSlider heroSlider rsMinW">
-  <div class="rsContent">
-    <img class="rsImg" src="/img/banner/slide1.jpeg" alt="">
+      <div class="rsContent slide1" >
 
-  </div>
-  <div class="rsContent">
+        <div class="bContainer" style="top:70%;">
+          <strong class="rsABlock txtCent blockHeadline"><div class="black">Precision Firearm Products</div></strong>
+          <span class="rsABlock txtCent" data-move-effect="none"><div class="black">Manufactured in Oregon</div></span>
+          <span class="rsABlock txtCent" data-move-effect="none"><div class="black">USA Materials, USA Labor<!-- Innovation, Design, Quality, and Zero Compromise --></div></span>
+        </div>
 
-    <img class="rsImg" src="/img/banner/slide2.jpeg" alt="">
+       <!-- <img class="rsTmb" src="images/banner/slide0_tb.jpeg" alt="image description" style="display: none;width:0px;"/> -->
+      </div>
 
-             <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-     <ul>
-          <li>Complete Firearms and Parts</li>
-          <li>Law Enforcement</li>
-          <li>SOT/Full Auto</li>
-          <li>SBR</li>
-          <li>Military</li>
-          <li>Civilian</li>
+      <div class="rsContent slide2">
+        <div class="bContainer">
+          <strong class="rsABlock blockSubHeadline" data-move-effect="none" style="padding-left:20px">Complete Firearms and Parts</strong>
+          <span class="rsABlock " data-move-effect="top" style="padding-left:50px">• Law Enforcement</span>
+          <span class="rsABlock " data-move-effect="bottom" style="padding-left:50px">• SOT/Full Auto</span>
+          <span class="rsABlock " data-move-effect="bottom" style="padding-left:50px">• SBR</span>
+          <span class="rsABlock " data-move-effect="bottom" style="padding-left:50px">• Military</span>
 
-      </ul>
-      <a href="/products/AR15BilletLowerReceiver">Learn More</a>
+          <span class="rsABlock " data-move-effect="left" style="padding-left:50px">• Civilian </span>
+         <!--  <span class="rsABlock txtCent" data-move-effect="right">from right</span>
+          <span class="rsABlock txtCent" data-move-effect="none">just fade</span> -->
+        </div>
+
+        <!-- <img class="rsTmb" src="images/banner/slide4_tb.jpeg" alt="image description" /> -->
+      </div>
+
+  <div class="rsContent slide3">
+    <div class="bContainer">
+      <strong class="rsABlock blockSubHeadline txtCent"  data-move-effect="none"  data-move-effect="left"  data-delay="0"><div class="black">Model NT15S 556</div></strong>
+
+      <!-- <span class="rsABlock  " data-move-effect="left" data-delay="1800" data-move-offset="500" data-easing="easeOutBack" data-fade-effect="none"><div class="black">Fully CNC Machined Lower</div></span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2000" data-move-offset="500" data-easing="easeOutCirc" data-fade-effect="none"><div class="black">Machined from High Grade Aerospace Billet Aluminum</div></span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2500" data-move-offset="500" data-speed="1000" data-fade-effect="none"><div class="black">Reinforced Design 3-D CNC Machined</div></span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2500" data-move-offset="500" data-fade-effect="true"><div class="black">Light Weight / 9.25oz</div></span> -->
+
+
+    <!-- <div class="photoCopy rsABlock"  data-move-effect="left" data-delay="2500" data-move-offset="500" data-fade-effect="true">Pictured In its Raw Machined Form</div> -->
+      <!-- Move caption to bottom of page -->
     </div>
 
+        <!-- <img class="rsTmb" src="images/banner/DSC_0670_tb.png" alt="image description" /> -->
   </div>
- <div class="rsContent">
-    <img class="rsImg" src="/img/banner/slide3.jpeg" alt="">
-    <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-        <ul>
-            <il>Precision Firearm Products</il>
-            <il>Manufactured in Oregon</il>
-            <il>USA Materials, USA Labor</il>
-        </ul>
+
+ <div class="rsContent slide4">
+    <div class="bContainer">
+      <strong class="rsABlock blockSubHeadline "  data-move-effect="none"  data-move-effect="left"  data-delay="0"><div class="black">Made in the Northwest</div></strong>
+      <!-- <span class="rsABlock " data-move-effect="left" data-delay="1500" data-move-offset="500" data-easing="easeOutBack" data-fade-effect="none">Fully CNC Machined Lower</span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2000" data-move-offset="500" data-easing="easeOutCirc" data-fade-effect="none">Highest Quality Aluminum available 7075-T6</span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2500" data-move-offset="500" data-speed="1000" data-fade-effect="none">In its Raw Machined Form</span>
+      <span class="rsABlock " data-move-effect="left" data-delay="2500" data-move-offset="50" data-fade-effect="true"></span> -->
     </div>
 
+        <!-- <img class="rsTmb" src="images/banner/portland_tb.jpg" alt="image description" /> -->
   </div>
-  <div class="rsContent">
-    <img class="rsImg" src="./img/banner/slide4.jpeg" alt="">
+ <!--  <div class="rsContent slide5">
+    <a class="rsImg " href="images/banner/slide4.jpeg">palms & beach</a>
+    <div class="bContainer">
+      <strong class="rsABlock txtCent blockHeadline">Block may have any HTML</strong>
+      <span class="rsABlock txtCent" data-move-effect="none">and can be placed on any slide type</span>
+    </div>
 
-     <span class="photosBy rsAbsoluteEl" data-fade-effect="fa;se" data-move-offset="40" data-move-effect="bottom" data-speed="200">Made in the Northwest</span>
-  </div>
-  <div class="rsContent">
-    <img class="rsImg" src="./img/banner/slide5.jpeg" alt="">
+        <img class="rsTmb" src="images/banner/slide4_tb.jpeg" alt="image description" />
+    <img class="rsABlock palmImg" data-fade-effect="none" data-move-effect="bottom" data-opposite="true" data-move-offset="450" data-delay="350" data-speed="300" data-easing="easeOutBack" src="../img/lower_receiver.png" />
+    <div class="photoCopy">Photo by <a href="http://photo.aphecetche.fr/">Dustin Zeisler</a></div>
+  </div> -->
 
-  </div>
-</div>
+</div id="slider-with-blocks-1" class="royalSlider rsMinW  ">
 
 <script>
 
     jQuery(document).ready(function($) {
-  $('#full-width-slider').royalSlider({
+  $('#slider-with-blocks-1').royalSlider({
     arrowsNav: true,
     loop: true,
     keyboardNavEnabled: true,
@@ -160,8 +113,6 @@ title: Northtech Defence
     imageScaleMode: 'fill',
     arrowsNavAutoHide: false,
     autoScaleSlider: true,
-    autoScaleSliderWidth: 960,
-    autoScaleSliderHeight: 350,
     controlNavigation: 'bullets',
     thumbsFitInViewport: false,
     navigateByClick: true,
@@ -179,8 +130,7 @@ title: Northtech Defence
       change: false
     },
     /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-    imgWidth: 1400,
-    imgHeight: 700
+
   });
 });
 </script>
