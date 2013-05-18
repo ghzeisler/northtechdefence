@@ -54,6 +54,19 @@ helpers do
       end
       content_tag(:li, link_to(title, page_link), :class => "#{css_class} #{visibility}")
   end
+
+  def lightbox(class_name)
+    files_lg = Dir.glob("source/products/#{class_name}/*_lg.png")
+    files_sm = Dir.glob("source/products/#{class_name}/*_sm.png")
+    lightbox_tags = []
+    files_lg.each_with_index do |file , i|
+      file = file.sub("source", "")
+      files_sm[i] = files_sm[i].gsub("source", "")
+      img = (tag :img, :src => files_sm[i])
+      lightbox_tags[i] = link_to(img, file, :class => class_name)
+    end
+    lightbox_tags.each { |box| puts box}
+  end
 end
 ignore 'javascripts/bootstrap/*'
 

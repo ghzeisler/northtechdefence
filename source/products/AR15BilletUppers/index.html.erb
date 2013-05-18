@@ -12,15 +12,11 @@ layout: layout
         $('.AR15BilletUppers').magnificPopup({type:'image'});
     });
     </script>
-
     <div class="lightbox_products">
-         <a href="AR15BilletUppers/1_lg.png" class="AR15BilletUppers">
-        <img src="AR15BilletUppers/1_sm.png" alt="">
-    </a>
-    <a href="AR15BilletUppers/2_lg.png" class="AR15BilletUppers">
-        <img src="AR15BilletUppers/2_sm.png" alt="">
-    </a>
 
+    <% lightbox("AR15BilletUppers").each do |box| %>
+    <%= box %>
+    <% end %>
 
     </div>
 
