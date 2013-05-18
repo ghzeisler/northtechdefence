@@ -58,14 +58,19 @@ helpers do
   def lightbox(class_name)
     files_lg = Dir.glob("source/products/#{class_name}/*_lg.png")
     files_sm = Dir.glob("source/products/#{class_name}/*_sm.png")
-    lightbox_tags = []
+    lightbox_tags = "<script>
+     $(document).ready(function() {
+        $('.#{class_name}').magnificPopup({type:'image'});
+    });
+    </script>
+    <div class='lightbox_products'>\n"
     files_lg.each_with_index do |file , i|
       file = file.sub("source", "")
       files_sm[i] = files_sm[i].gsub("source", "")
       img = (tag :img, :src => files_sm[i])
-      lightbox_tags[i] = link_to(img, file, :class => class_name)
+      lightbox_tags += link_to(img, file, :class => class_name) + "\n"
     end
-    lightbox_tags.each { |box| puts box}
+    lightbox_tags += "\n</div>"
   end
 end
 ignore 'javascripts/bootstrap/*'

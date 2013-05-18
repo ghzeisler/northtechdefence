@@ -7,21 +7,8 @@ layout: layout
     <h1>AR15 Billet Uppers</h1>
     <!-- <div class="model">MODEL# NT15S</div>
     <div class="price">MSRP $249.00</div> -->
-    <script>
-     $(document).ready(function() {
-        $('.AR15BilletUppers').magnificPopup({type:'image'});
-    });
-    </script>
-    <div class="lightbox_products">
 
-    <% lightbox("AR15BilletUppers").each do |box| %>
-    <%= box %>
-    <% end %>
-
-    </div>
-
-
-
+    <%= lightbox("AR15BilletUppers") %>
 
     <p>Machined from High Grade Aerospace Billet Aluminum 7075-T6
 Magwell flare is increased for smooth magazine loads
