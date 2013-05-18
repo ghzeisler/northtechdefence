@@ -91,7 +91,16 @@
   bottom: -60px;
   position: absolute;
 }
-
+.bContainer{
+  color:white;
+  margin-left: 10px;
+}
+.rsContent{
+  background-position: center center;
+  background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #000;
+}
 
 @media screen and (min-width: 0px) and (max-width: 960px) {
   .rsContent {
@@ -114,7 +123,7 @@
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .royalSlider,
   .rsOverflow {
-    height: 330px !important;
+    height: 200px !important;
   }
   .rsContent {
     font-size: 18px;
