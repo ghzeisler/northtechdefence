@@ -5293,7 +5293,7 @@ footer {
   -moz-box-shadow: 0px 5px 10px 3px #46474b;
   box-shadow: 0px 5px 10px 3px #46474b;
   height: 100px;
-  background: url(img/footer_grade.png);
+  background: url(/northtechdefence/img/footer_grade.png);
   margin-bottom: 20px; }
 
 /* line 104, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
