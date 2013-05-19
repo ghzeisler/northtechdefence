@@ -789,7 +789,7 @@ img.rsImg {
   margin-left: 3px;
   position: absolute;
   cursor: pointer;
-  background: url("/northtechdefence/stylesheets/skins/minimal-white//stylesheets/skins/minimal-white/rs-minimal-white.png") transparent;
+  background: url("/stylesheets/skins/minimal-white//stylesheets/skins/minimal-white/rs-minimal-white.png") transparent;
   border-radius: 2px; }
 
 /* line 67, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
@@ -963,7 +963,7 @@ img.rsImg {
   margin-left: -8px;
   position: absolute;
   cursor: pointer;
-  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png"); }
+  background: url("/stylesheets/skins/minimal-white/rs-minimal-white.png"); }
 
 /* line 209, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
 .rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
@@ -1088,7 +1088,7 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") 0 0 transparent; }
+  background: url("/stylesheets/skins/minimal-white/rs-minimal-white.png") 0 0 transparent; }
 
 /* line 327, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
 .rsMinW .rsFullscreenIcn:hover {
@@ -1122,7 +1122,7 @@ img.rsImg {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") no-repeat 0 -32px;
+  background: url("/stylesheets/skins/minimal-white/rs-minimal-white.png") no-repeat 0 -32px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000; }
@@ -1161,7 +1161,7 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") -64px 0;
+  background: url("/stylesheets/skins/minimal-white/rs-minimal-white.png") -64px 0;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000; }
@@ -1179,7 +1179,7 @@ img.rsImg {
 .rsMinW .rsPreloader {
   width: 20px;
   height: 20px;
-  background-image: url("/northtechdefence/stylesheets/skins/preloaders/preloader-white.gif");
+  background-image: url("/stylesheets/skins/preloaders/preloader-white.gif");
   left: 50%;
   top: 50%;
   margin-left: -10px;
@@ -5185,7 +5185,7 @@ input[type="submit"].btn {
 body {
   margin: 0 auto;
   background: #202329;
-  background: url(/northtechdefence/img/carbon_fibre_big.png); }
+  background: url(/img/carbon_fibre_big.png); }
 
 /* line 17, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
 .hero-unit {
@@ -5247,7 +5247,7 @@ body {
   -moz-box-shadow: 0px 10px 10px 3px #46474b;
   box-shadow: 0px 10px 10px 3px #46474b;
   background: #202329;
-  background: url(/northtechdefence/img/cartographer.png);
+  background: url(/img/cartographer.png);
   color: white;
   font-size: 1.2em;
   line-height: 1.5em; }
@@ -5293,7 +5293,7 @@ footer {
   -moz-box-shadow: 0px 5px 10px 3px #46474b;
   box-shadow: 0px 5px 10px 3px #46474b;
   height: 100px;
-  background: url(/northtechdefence/img/footer_grade.png);
+  background: url(/img/footer_grade.png);
   margin-bottom: 20px; }
 
 /* line 104, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
@@ -5363,7 +5363,26 @@ footer {
   /* line 161, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 750px; } }
-@media (max-width: 780px) {
-  /* line 169, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
+@media (min-width: 780px) and (max-width: 767px) {
+  /* line 166, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
+  .body {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important; } }
+@media (min-width: 300px) and (max-width: 780px) {
+  /* line 174, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
   .lightbox_products {
-    margin-left: 70px; } }
+    margin-left: 30px; }
+
+  /* line 177, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
+  .body {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important; } }
+@media (max-width: 767px) {
+  /* line 187, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
+  body {
+    padding-left: 0px;
+    padding-right: 0px; } }
