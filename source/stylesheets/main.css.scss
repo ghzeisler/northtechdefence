@@ -163,11 +163,29 @@ footer{
     }
 }
 @media (min-width: $navbarCollapseWidth) and (max-width: 767px){
-
-}
-@media (max-width: $navbarCollapseWidth){
-    .lightbox_products{
-            margin-left: 70px;
+     .body{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
     }
 }
+@media (min-width: 300px) and (max-width: $navbarCollapseWidth){
+    .lightbox_products{
+            margin-left: 30px;
+    }
+    .body{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
 
+}
+
+@media (max-width: 767px){
+body {
+padding-left: 0px;
+padding-right: 0px;
+}
+}
