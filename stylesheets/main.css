@@ -789,7 +789,7 @@ img.rsImg {
   margin-left: 3px;
   position: absolute;
   cursor: pointer;
-  background: url("stylesheets/skins/minimal-white//stylesheets/skins/minimal-white/rs-minimal-white.png") transparent;
+  background: url("/northtechdefence/stylesheets/skins/minimal-white//stylesheets/skins/minimal-white/rs-minimal-white.png") transparent;
   border-radius: 2px; }
 
 /* line 67, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
@@ -963,7 +963,7 @@ img.rsImg {
   margin-left: -8px;
   position: absolute;
   cursor: pointer;
-  background: url("stylesheets/skins/minimal-white/rs-minimal-white.png"); }
+  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png"); }
 
 /* line 209, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
 .rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
@@ -1088,7 +1088,7 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("stylesheets/skins/minimal-white/rs-minimal-white.png") 0 0 transparent; }
+  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") 0 0 transparent; }
 
 /* line 327, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/skins/minimal-white/rs-minimal-white.css */
 .rsMinW .rsFullscreenIcn:hover {
@@ -1122,7 +1122,7 @@ img.rsImg {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   transition: .3s;
-  background: url("stylesheets/skins/minimal-white/rs-minimal-white.png") no-repeat 0 -32px;
+  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") no-repeat 0 -32px;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000; }
@@ -1161,7 +1161,7 @@ img.rsImg {
   margin: 6px;
   width: 32px;
   height: 32px;
-  background: url("stylesheets/skins/minimal-white/rs-minimal-white.png") -64px 0;
+  background: url("/northtechdefence/stylesheets/skins/minimal-white/rs-minimal-white.png") -64px 0;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   *background-color: #000; }
@@ -1179,7 +1179,7 @@ img.rsImg {
 .rsMinW .rsPreloader {
   width: 20px;
   height: 20px;
-  background-image: url("stylesheets/skins/preloaders/preloader-white.gif");
+  background-image: url("/northtechdefence/stylesheets/skins/preloaders/preloader-white.gif");
   left: 50%;
   top: 50%;
   margin-left: -10px;
