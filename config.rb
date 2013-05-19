@@ -39,7 +39,7 @@
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
-
+set :relative_links, true
 helpers do
   def nav_active(current_page, page_link , title=nil, visibility = "")
     title ||= page_link
