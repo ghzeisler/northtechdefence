@@ -5185,7 +5185,7 @@ input[type="submit"].btn {
 body {
   margin: 0 auto;
   background: #202329;
-  background: url(img/carbon_fibre_big.png); }
+  background: url(/northtechdefence/img/carbon_fibre_big.png); }
 
 /* line 17, /Users/zeisler/ruby_projects/ntd/ntd/source/stylesheets/main.css.scss */
 .hero-unit {
